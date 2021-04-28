@@ -10,5 +10,9 @@
   },
   "keywords": [],
   "author": "Luke Steadman <ljsteadman@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "serverless-http": "^2.7.0"
+  }
 }

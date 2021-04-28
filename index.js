@@ -1,6 +1,9 @@
-const http = require('http');
+const serverless = require('serverless-http');
+const express = require('express');
+const app = express();
 
-http.createServer((req, res) => {
-  res.write('Hello World!');
-  res.end();
-}).listen(3000); 
+app.get('/', function (req, res) {
+  res.send('Hello World!');
+});
+
+module.exports.handler = serverless(app);
