@@ -2,7 +2,7 @@ service: nodejs-example-serverless
 
 provider:
   name: aws
-  runtime: nodejs14
+  runtime: nodejs12.x
   stage: dev
   region: eu-west-2
 
