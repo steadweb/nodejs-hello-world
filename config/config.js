@@ -8,6 +8,9 @@ module.exports = {
     host: '127.0.0.1',
     port: 3306,
     dialect: 'mysql',
+    dialectOptions: {
+      connectTimeout: 60000
+    }
   },
   production: {
     username: process.env.DB_USERNAME,
@@ -16,5 +19,8 @@ module.exports = {
     host: process.env.DB_HOST,
     port: 3306,
     dialect: 'mysql',
+    dialectOptions: {
+      connectTimeout: 60000
+    }
   }
 };
